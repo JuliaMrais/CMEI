@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<title>CMEI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-l5 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#Início" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Início</a>
+  <a href="#Grupo" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Grupo</a>
+  <a href="#Ateliê" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Ateliê</a>
+  <a href="#A visita" class="w3-bar-item w3-button w3-hide-small w3-hover-white">A visita</a>
+  <a href="#Contato" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Mais <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="pag.html" target="_blank" class="w3-bar-item w3-button">O CMEI</a>
+      <a href="impre.html" target="_blank" class="w3-bar-item w3-button">Nossas Impressões</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#Grupo" class="w3-bar-item w3-button">Grupo</a>
+    <a href="#Ateliê" class="w3-bar-item w3-button">Ateliê</a>
+    <a href="#A visita" class="w3-bar-item w3-button">A visita</a>
+    <a href="#Contato" class="w3-bar-item w3-button">Contato</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div id="Início" class="w3-display-container w3-animate-opacity">
+  <img src="frente.jpeg" alt="frente" style="width:100%;min-height:350px;max-height:600px;">
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="Grupo">
+<h2>NOSSO GRUPO</h2>
+<p>Conheça nossa equipe!</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="julia.jpg" alt="julia" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Júlia Morais</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="leticia.jpg" alt="leticia" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Letícia Maciel</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="kianne.jpg" alt="Kianne" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kianne Bueno</h3>
+</div>
+
+<div class="w3-quarter">
+  <img src="sara.jpg" alt="Sara" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Sara Silva</h3>
+</div>
+
+<div id="imgu" class="w3-quarter">
+  <img src="pietra.jpeg" alt="Pietra" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Letícia Pietra</h3>
+</div>
+
+<div id="img" class="w3-quarter" >
+  <img src="Anny.jpg" alt="Anny"  style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Adrianny Silva</h3>
+</div>
+<style type="text/css">
+  #img{
+    margin-left: 1%;
+  }
+  #imgu{
+    margin-left: 25%;
+  }
+</style>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l3" id="Ateliê">
+
+<div class="w3-quarter">
+<h2>Ateliê Articulador de Saberes</h2>
+<p>Por meio deste, pudemos refletir sobre a organização educativa da instituição de Educação Infantil, na unidade visitada, CMEI Missionário Odilon dos Santos, com base nos aspectos teóricos e metodológicos articulados com os componentes curriculares ofertados no 3º período do curso de pedagogia presencial.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="Edinf.jpg" alt="Educação Infantil" style="width:65%">
+  <div class="w3-container">
+  <h3>Educação Infantil</h3>
+  <p>- Conceitos e concepções.</p>
+  <p>- Relação escola e família.</p>
+  <p>- A articulação entre a educação infantil e o ensino fundamental, como se dá?</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="psicol.jpg" alt="Lights" style="width:69%">
+  <div class="w3-container">
+  <h3>Psicologia Educacional II</h3>
+  <p>- O PPP baseia-se na concepção sociointeracionista de Vigotsky.</p>
+  <p>- “Até meus pais jogam lixo na rua”. Justificativa da criança. Relaciona-se isso com o conceito imitação.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="pol.jpg" alt="Mountains" style="width: 83%">
+  <div class="w3-container">
+  <h3>Políticas Públicas da Educação</h3>
+ <p>- o que é uma política e sua intencionalidade.</p>
+ <p>- relação Município x Escola.</p>
+ <p>- Relação com a comunidade.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="oeb.jpg" alt="Mountains" style="width:70%">
+  <div class="w3-container">
+  <h3>Organização e gestão da Educação Brasileira</h3>
+  <p>- Noções legislativas.</p>
+  <p>- Modelos de Gestão.</p>
+  <p>- Canais de participação.</p>
+</div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="hist.jpg" alt="Mountains" style="width: 66%">
+  <div class="w3-container">
+  <h3>Fundamentos da história e da filosofia da educação</h3>
+  <p>- olhar atento sobre a história da escola.</p>
+  <p>- investigação do contexto escolar.</p>
+  <p>- noções básicas sobre diversos teóricos da educação.</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div id="A visita" class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pics Row -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="frente.jpeg" style="width:100%">
+    <div class="text">Caption one</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="um.jpeg" style="width:100%">
+  <div class="text">Caption two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="dois.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="quatro.jpeg" style="width:100%">
+  <div class="text">Caption four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="dez.jpeg" style="width:100%">
+  <div class="text">Caption five</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="cinco.jpeg" style="width:100%">
+  <div class="text">Caption six</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="oito.jpeg" style="width:100%">
+  <div class="text">Caption seven</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="onze.jpeg" style="width:100%">
+  <div class="text">Caption eight</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="Contato">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Fale Conosco</span></div>
+      <h3>Endereço</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.3519524213984!2d-35.23302558586633!3d-5.805869658884385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2554c7da8d2b9%3A0x128284d966352739!2sCMEI%20Mission%C3%A1rio%20Odilon%20dos%20Santos!5e0!3m2!1spt-BR!2sbr!4v1572567884007!5m2!1spt-BR!2sbr" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="">
+      </iframe>
+      <p>Venha nos visitar.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Rua Bom Pastor - Quintas, Natal - RN, 59050-111</p>
+    <!--  <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p> -->
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nome</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>E-mail</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Menssagem</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>Assinar Menssagem</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="ufrn.png" class="w3-image w3-greyscale-min" style="width:20%;">
+<img src="ce.png" class="w3-image w3-greyscale-min" style="width:18%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-l4 w3-center">
+  <h4>Nos encontre nas redes sociais!</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
